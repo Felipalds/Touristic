@@ -17,6 +17,11 @@
             background-color: rgb(58, 202, 39);
            color: white;
         }
+        header{
+            position: relative;
+            top: 0;
+            left: 0;
+        }
         h1{
             font-family:'Quicksand', sans-serif;
         }
@@ -93,6 +98,43 @@
         ul#icones{
             text-align: center;
         }
+        div#depoimentos{
+            background-image: url("imagens/praia\ JPG.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment:fixed;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        div#planos{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        div#planos li{
+            display: inline-block;
+            margin: 0px;
+            position: relative;
+        }
+        div#planos li img{
+            width: 350px;
+            opacity: .8;
+            transition: .18s;
+        }
+        div#planos li figure{
+            margin: 20px;
+           
+        }
+        div#planos li img:hover{
+            width: 400px;
+            opacity: 1;
+        }
+        div#planos li figcaption{
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            font-family: Recursive;
+            font-size: 40px;
+        }
     </style>
 </head>
 <body>
@@ -101,18 +143,21 @@
             <ul id="menu">
                 <li><a href="">Início</a></li>
                 <li><a href="">Conheça</a></li>
+                <li><a href="">Depoimentos</a></li>
                 <li><a href="">Planos</a></li>
                 <li><a href="">Reserve já</a></li>
             </ul>
         </nav>
         <div id="titulo">
             <br><br><br><br>
-            <h1 id="t1">Touristic</h1>
-            <h2 id="s1">A sua melhor maneira de viajar!</h2>
+            <header>
+                <h1 id="t1">Touristic</h1>
+                <h2 id="s1">A sua melhor maneira de viajar!</h2>
+            </header>
         </div>
     </div>
 
-
+    <!-- CONHEÇA -->
     <h1 id="t2">Conheça:</h1>
     <h2>A agência de viagens com mais de 20 anos de experiência.</h2>
     <br><br><br><br>
@@ -130,23 +175,87 @@
             <h3>E o melhor: <br>com um baixo custo</h3>
         </li>
     </ul>
-    <h1 id="t2">Planos:</h1>
-    <h2>A agência de viagens com mais de 20 anos de experiência.</h2>
-    <br><br><br><br>
-    <ul id="icones">
-        <li>
-            <img src="imagens/jesus PNG.png" alt="">
-            <h3>Visite lugares <br>incríveis</h3>
-        </li>
-        <li>
-            <img src="imagens/aviao PNG.png" alt="">
-            <h3>Viage para onde e <br>quando quiser</h3>
-        </li>
-        <li>
-            <img src="imagens/dinheiro PNG.png" alt="">
-            <h3>E o melhor: <br>com um baixo custo</h3>
-        </li>
-    </ul>
+    </div>
+
+
+    <!-- DEPOIMENTOS -->
+    <div id="depoimentos">
+        <h1 id="t2">Depoimentos:</h1>
+        <h2>A agência de viagens com mais de 20 anos de experiência.</h2>
+        <br><br><br><br>
+        <ul id="icones">
+            <li>
+                <img src="imagens/jesus PNG.png" alt="">
+                <h3>Visite lugares <br>incríveis</h3>
+            </li>
+            <li>
+                <img src="imagens/aviao PNG.png" alt="">
+                <h3>Viage para onde e <br>quando quiser</h3>
+            </li>
+            <li>
+                <img src="imagens/dinheiro PNG.png" alt="">
+                <h3>E o melhor: <br>com um baixo custo</h3>
+            </li>
+        </ul>
+    </div>
+    <!--- PLANOS  -->
+  
+    <div id='planos'>
+        <h1 id="t2">Planos:</h1>
+        <h2>A agência de viagens com mais de 20 anos de experiência.</h2>
+        <ul id="planos">
+            <li>
+                <figure><img src="imagens/planos/acre.jpg" alt=""></figure>
+                <figcaption>Rio Branco</figcaption>
+            </li>
+
+            <li>
+                <figure><img src="imagens/planos/bahia.jpg" alt=""></figure>
+                <figcaption>Salvador</figcaption>
+            </li>
+            <li>
+                <figure><img src="imagens/planos/cascavel.jpg" alt=""></figure>
+                <figcaption>Cascavel</figcaption>
+            </li>
+
+            <li>
+                <figure><img src="imagens/planos/corbelia.jpg" alt=""></figure>
+                <figcaption>Corbélia</figcaption>
+            </li>
+
+            <li>
+                <figure><img src="imagens/planos/curitiba.jpg" alt=""></figure>
+                <figcaption>Curitiba</figcaption>
+            </li>
+
+            <li>
+                <figure><img src="imagens/planos/floripa.jpg" alt=""></figure>
+                <figcaption>Florianópolis</figcaption>
+            </li>
+
+            <li>
+                <figure><img src="imagens/planos/fortaleza.jpg" alt=""></figure>
+                <figcaption>Fortaleza</figcaption>
+            </li>
+
+            <li>
+                <figure><img src="imagens/planos/maranhao.jpg" alt=""></figure>
+                <figcaption>Maranhão</figcaption>
+            </li>
+
+            <li>
+                <figure><img src="imagens/planos/porto.jpg" alt=""></figure>
+                <figcaption>Porto Velho</figcaption>
+            </li>
+
+        </ul>
+
+        
+
+
+    <!-- RESERVE JÁ -->
+    <hr>
+    </div>
     <h1 id="t2">Reserve já:</h1>
     <h2>A agência de viagens com mais de 20 anos de experiência.</h2>
     <br><br><br><br>
