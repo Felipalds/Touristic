@@ -11,131 +11,280 @@
     <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap" rel="stylesheet"> 
     <title>Touristic - A sua melhor maneira de viajar</title>
     <style>
-        body{
-            text-align: center;
-            margin-top: 200px;
-            background-color: rgb(58, 202, 39);
-           color: white;
-        }
-        header{
-            position: relative;
-            top: 0;
-            left: 0;
-        }
-        h1{
-            font-family:'Quicksand', sans-serif;
-        }
-        h2{
-            font-family:'Inconsolata', monospace;
-        }
-        h1#t1{
-            font-size:200px;
-            margin-bottom:-50px;
-        }
-        h2#s1{
-            font-size:50px
-        }
-        div#inicio{
-            margin-top:-200px;
-            border-bottom: 100000px;
+
+        @media(orientation: landscape){
+            body{
+                text-align: center;
+                margin-top: 200px;
+                background-color: rgb(23, 150, 6);
             color: white;
-            background-image: url("imagens/paisagem.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: fixed;
-            padding-bottom:330px;
-            padding-right:-200px;
-            background-attachment: fixed;
+            }
+            header{
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+            h1{
+                font-family:'Quicksand', sans-serif;
+            }
+            h2{
+                font-family:'Inconsolata', monospace;
+            }
+            h1#t1{
+                font-size:200px;
+                margin-bottom:-50px;
+            }
+            h2#s1{
+                font-size:50px
+            }
+            div#inicio{
+                margin-top:-200px;
+                border-bottom: 100000px;
+                color: white;
+                background-image: url("imagens/paisagem.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: fixed;
+                padding-bottom:330px;
+                padding-right:-200px;
+                background-attachment: fixed;
+                
+            }
+            ul#menu{
+                position: fixed;
+                top: -20px;
+                right: 0;
+                border-radius: 10px;
+            }
+            ul#menu li{
+                display: inline-block;
+                margin-right:10px;
+                font-family: Quicksand;
+                color: white;
+                font-size: 17px;
+                padding:20px;
+                padding-left: 0px;
+                width: 100px;
+                height:15px;
+            }
+            ul#menu li:hover{
+                background-color: green;
+                transition: .4s;
+                
+            }
+            nav{
+                text-align:center;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            section{
+                margin-top: px;
+            }
+            div#titulo{
+                top: 50%;
+            }
+            h1#t2{
+                font-size: 50px;
+                margin-bottom: -13px;
+                font-family:Recursive;
+            }
+            ul#icones li{
+                display: inline-block;
+                margin: 100px;
+                margin-top: auto;
+            }
+            ul#icones li h3{
+                font-family:Recursive;
+                font-size: 25px;
+            }
+            ul#icones{
+                text-align: center;
+            }
+            div#depoimentos{
+                background-image: url("imagens/praia\ JPG.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-attachment:fixed;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            div#planos{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            div#planos li{
+                display: inline-block;
+                margin: 0px;
+                position: relative;
+            }
+            div#planos li img{
+                width: 350px;
+                opacity: .8;
+                transition: .18s;
+            }
+            div#planos li figure{
+                margin: 20px;
             
+            }
+            div#planos li img:hover{
+                width: 400px;
+                opacity: 1;
+            }
+            div#planos li figcaption{
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                font-family: Recursive;
+                font-size: 40px;
+            }
+            .menu-diferente{
+                transition: .2s;
+                background-color: rgba(0, 128, 100, 0.8);
+            }
         }
-        ul#menu{
-            margin-top: 20px;
-            position: fixed;
-            right: 0;
-            top: 0;
-        }
-        ul#menu li{
-            display: inline-block;
-            margin-right:10px;
-            font-family: Quicksand;
-            color: white;
-            font-size: 20px;
-            padding:20px;
-        }
-        ul#menu li:hover{
-            background-color: green;
-            transition: .4s;
-            padding: 10px;
-            font-size: 30px;
-        }
-        nav{
-            text-align:center;
-        }
-        a{
-            color: white;
-            text-decoration: none;
-        }
-        section{
-            margin-top: px;
-        }
-        div#titulo{
-            top: 50%;
-        }
-        h1#t2{
-            font-size: 50px;
-            margin-bottom: -13px;
-            font-family:Recursive;
-        }
-        ul#icones li{
-            display: inline-block;
-            margin: 100px;
-            margin-top: auto;
-        }
-        ul#icones li h3{
-            font-family:Recursive;
-            font-size: 25px;
-        }
-        ul#icones{
-            text-align: center;
-        }
-        div#depoimentos{
-            background-image: url("imagens/praia\ JPG.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-attachment:fixed;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        div#planos{
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        div#planos li{
-            display: inline-block;
-            margin: 0px;
-            position: relative;
-        }
-        div#planos li img{
-            width: 350px;
-            opacity: .8;
-            transition: .18s;
-        }
-        div#planos li figure{
-            margin: 20px;
-           
-        }
-        div#planos li img:hover{
-            width: 400px;
-            opacity: 1;
-        }
-        div#planos li figcaption{
-            position: absolute;
-            bottom: 40px;
-            left: 40px;
-            font-family: Recursive;
-            font-size: 40px;
+
+        @media(orientation: portrait){
+            body{
+                text-align: center;
+                margin-top: 200px;
+                background-color: rgb(23, 150, 6);
+                color: white;
+            }
+            header{
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+            h1{
+                font-family:'Quicksand', sans-serif;
+            }
+            h2{
+                font-family:'Inconsolata', monospace;
+            }
+            h1#t1{
+                font-size:80px;
+                margin-bottom:-10px;
+            }
+            h2#s1{
+                font-size:30px
+            }
+            div#inicio{
+                margin-top:-200px;
+                border-bottom: 100000px;
+                color: white;
+                background-image: url("imagens/paisagem.jpg");
+                background-repeat: no-repeat;
+                background-size: 200%;
+                background-position: fixed;
+                padding-bottom:330px;
+                padding-right:-200px;
+                
+                
+            }
+            ul#menu{
+                position: fixed;
+                top: -20px;
+                border-radius: 10px;
+            }
+            ul#menu li{
+                display: inline-block;
+                margin-right:10px;
+                font-family: Quicksand;
+                color: white;
+                font-size: 18px;
+                padding:5px;
+                padding-left: 0px;
+                width: 100px;
+                height:10px;
+            }
+            nav{
+                text-align:center;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            section{
+                margin-top: px;
+            }
+            div#titulo{
+                top: 50%;
+            }
+            h1#t2{
+                font-size: 50px;
+                margin-bottom: -13px;
+                font-family:Recursive;
+            }
+            ul#icones li{
+                display: inline-block;
+                margin: 100px;
+                margin-top: auto;
+            }
+            ul#icones li h3{
+                font-family:Recursive;
+                font-size: 25px;
+            }
+            ul#icones{
+                text-align: center;
+            }
+            div#depoimentos{
+                background-image: url("imagens/praia\ JPG.jpg");
+                background-repeat: no-repeat;
+                background-size: 700%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            div#planos{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            div#planos li{
+                display: inline-block;
+                margin: 0px;
+                position: relative;
+            }
+            div#planos li img{
+                width: 350px;
+                opacity: .8;
+                transition: .18s;
+            }
+            div#planos li figure{
+                margin: 20px;
+            
+            }
+            div#planos li img:hover{
+                width: 400px;
+                opacity: 1;
+            }
+            div#planos li figcaption{
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                font-family: Recursive;
+                font-size: 40px;
+            }
+            .menu-diferente{
+                transition: .2s;
+                background-color: rgba(0, 128, 100, 0.8);
+            }
         }
     </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+jQuery(function () {
+  jQuery(window).scroll(function () {
+    if (jQuery(this).scrollTop() > 400) {
+     $("#menu").addClass("menu-diferente");
+    } else {
+     $("#menu").removeClass("menu-diferente");
+    }
+  });
+});
+</script>
 </head>
 <body>
     <div id="inicio">
@@ -273,5 +422,7 @@
             <h3>E o melhor: <br>com um baixo custo</h3>
         </li>
     </ul>
+
+</script>
 </body>
 </html>
