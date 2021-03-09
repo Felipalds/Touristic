@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+
+
+
+@media(orientation: landscape){
+    body{
+        text-align: center;
+        margin-top: 200px;
+        background-color: rgb(23, 150, 6);
+        color: white;
+    }
+
+    @keyframes changeBackgroundImage{
+        0%{
+            background-image: url("imagens/background/paisagem-min.jpg");
+        }
+        50%{
+            background-image: url("imagens/background/paisagem2-min.jpg");
+        }
+        100%{
+            background-image: url("imagens/background/paisagem3-min.jpg");
+        }
+    }
+
+    header{
+        position: relative;
+        top: -150px;
+        left: 0;
+    }
+    h1{
+        font-family:'Quicksand', sans-serif;
+    }
+    h2{
+        font-family:'Inconsolata', monospace;
+    }
+    h1#t1{
+        font-size:200px;
+        margin-bottom:-50px;
+    }
+    h2#s1{
+        font-size:50px
+    }
+    div#inicio{
+        margin-top:-200px;
+        color: white;
+        animation: changeBackgroundImage 15s infinite;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: fixed;
+        padding-bottom:330px;
+        padding-right:-200px;
+        margin: -10px;
+        margin-top: -140px;
+        background-attachment: fixed;
+        
+    }
+    ul#menu{
+        position: fixed;
+        top: -20px;
+        right: 0;
+        border-radius: 10px;
+    }
+    ul#menu li{
+        display: inline-block;
+        margin-right:10px;
+        font-family: Quicksand;
+        color: white;
+        font-size: 17px;
+        padding:20px;
+        padding-left: 0px;
+        width: 100px;
+        height:15px;
+    }
+    ul#menu li:hover{
+        background-color: green;
+        transition: .4s;
+        
+    }
+    nav{
+        text-align:center;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    section{
+        margin-top: px;
+    }
+    div#titulo{
+        top: 50%;
+    }
+    h1#t2{
+        font-size: 50px;
+        margin-bottom: -13px;
+        font-family:Recursive;
+    }
+    ul#icones li{
+        display: inline-block;
+        margin: 100px;
+        margin-top: auto;
+    }
+    ul#icones li h3{
+        font-family:Recursive;
+        font-size: 25px;
+    }
+    ul#icones{
+        text-align: center;
+    }
+    div#depoimentos{
+        background-image: url("imagens/background/paisagem3-min.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment:fixed;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    div#depoimentos ul{
+        padding-top:50px;
+        background-color:rgba(0,0,0,.2)
+    }
+    div#planos{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    div#planos li{
+        display: inline-block;
+        margin: 0px;
+        position: relative;
+    }
+    div#planos li img{
+        width: 350px;
+        opacity: .8;
+        transition: .18s;
+    }
+    div#planos li figure{
+        margin: 20px;
+    
+    }
+    div#planos li img:hover{
+        width: 400px;
+        opacity: 1;
+    }
+    div#planos li figcaption{
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        font-family: Recursive;
+        font-size: 40px;
+    }
+    .menu-diferente{
+        transition: .2s;
+        background-color: rgba(0, 128, 100, 0.8);
+    }
+}
+
+@media(orientation: portrait){
+    @keyframes changeBackgroundMobile{
+        0%{
+            background-image: url("imagens/background-mobile/paisagem-mob-min.jpg");
+        }
+        50%{
+            background-image: url("imagens/background-mobile/paisagem2-mob-min.jpg");
+        }
+        100%{
+            background-image: url("imagens/background-mobile/paisagem3-mob-min.jpg");
+        }
+    }
+    
+    body{
+        text-align: center;
+        margin-top: 200px;
+        background-color: rgb(23, 150, 6);
+        color: white;
+    }
+    h1{
+        font-family:'Quicksand', sans-serif;
+    }
+    h2{
+        font-family:'Inconsolata', monospace;
+    }
+    h1#t1{
+        font-size:80px;
+        margin-bottom:-10px;
+    }
+    h2#s1{
+        font-size:30px
+    }
+    div#inicio{
+        margin-top:-200px;
+        border-bottom: 100000px;
+        
+        animation: changeBackgroundMobile 15s infinite;
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position: fixed;
+        padding-bottom:330px;
+        padding-right:-200px;
+        
+        
+    }
+    ul#menu{
+        position: fixed;
+        top:0;
+        left:15%;
+        background-color: white;
+    }
+    ul#menu li{
+        display: inline-block;
+        font-family: Quicksand;
+        color:black;
+        font-size: 15px;
+        width: 30%;
+        height:auto;
+    }
+    nav{
+        text-align:center;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    section{
+        margin-top: px;
+    }
+    div#titulo{
+        top: 50%;
+    }
+    h1#t2{
+        font-size: 50px;
+        margin-bottom: -13px;
+        font-family:Recursive;
+    }
+    ul#icones li{
+        
+        display: inline-block;
+        margin: 100px;
+        margin-top: auto;
+    }
+    ul#icones li h3{
+        font-family:Recursive;
+        font-size: 25px;
+    }
+    ul#icones{
+        text-align: center;
+        height: 25%;
+    }
+    div#depoimentos{
+        background-image: url("imagens/praia\ JPG.jpg");
+        background-repeat: no-repeat;
+        background-size: 700%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    div#planos{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    div#planos li{
+        display: inline-block;
+        margin: 0px;
+        position: relative;
+    }
+    div#planos li img{
+        width: 350px;
+        opacity: .8;
+        transition: .18s;
+    }
+    div#planos li figure{
+        margin: 20px;
+    
+    }
+    div#planos li img:hover{
+        width: 400px;
+        opacity: 1;
+    }
+    div#planos li figcaption{
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        font-family: Recursive;
+        font-size: 40px;
+    }
+    .menu-diferente{
+        transition: .2s;
+        background-color: rgb(255, 255, 255);
+        
+    }
+}

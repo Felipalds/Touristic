@@ -5,280 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
     <title>Touristic - A sua melhor maneira de viajar</title>
-    <style>
-
-        @media(orientation: landscape){
-            body{
-                text-align: center;
-                margin-top: 200px;
-                background-color: rgb(23, 150, 6);
-            color: white;
-            }
-            header{
-                position: relative;
-                top: 0;
-                left: 0;
-            }
-            h1{
-                font-family:'Quicksand', sans-serif;
-            }
-            h2{
-                font-family:'Inconsolata', monospace;
-            }
-            h1#t1{
-                font-size:200px;
-                margin-bottom:-50px;
-            }
-            h2#s1{
-                font-size:50px
-            }
-            div#inicio{
-                margin-top:-200px;
-                border-bottom: 100000px;
-                color: white;
-                background-image: url("imagens/paisagem.jpg");
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: fixed;
-                padding-bottom:330px;
-                padding-right:-200px;
-                background-attachment: fixed;
-                
-            }
-            ul#menu{
-                position: fixed;
-                top: -20px;
-                right: 0;
-                border-radius: 10px;
-            }
-            ul#menu li{
-                display: inline-block;
-                margin-right:10px;
-                font-family: Quicksand;
-                color: white;
-                font-size: 17px;
-                padding:20px;
-                padding-left: 0px;
-                width: 100px;
-                height:15px;
-            }
-            ul#menu li:hover{
-                background-color: green;
-                transition: .4s;
-                
-            }
-            nav{
-                text-align:center;
-            }
-            a{
-                color: white;
-                text-decoration: none;
-            }
-            section{
-                margin-top: px;
-            }
-            div#titulo{
-                top: 50%;
-            }
-            h1#t2{
-                font-size: 50px;
-                margin-bottom: -13px;
-                font-family:Recursive;
-            }
-            ul#icones li{
-                display: inline-block;
-                margin: 100px;
-                margin-top: auto;
-            }
-            ul#icones li h3{
-                font-family:Recursive;
-                font-size: 25px;
-            }
-            ul#icones{
-                text-align: center;
-            }
-            div#depoimentos{
-                background-image: url("imagens/praia\ JPG.jpg");
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-attachment:fixed;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            div#planos{
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            div#planos li{
-                display: inline-block;
-                margin: 0px;
-                position: relative;
-            }
-            div#planos li img{
-                width: 350px;
-                opacity: .8;
-                transition: .18s;
-            }
-            div#planos li figure{
-                margin: 20px;
-            
-            }
-            div#planos li img:hover{
-                width: 400px;
-                opacity: 1;
-            }
-            div#planos li figcaption{
-                position: absolute;
-                bottom: 40px;
-                left: 40px;
-                font-family: Recursive;
-                font-size: 40px;
-            }
-            .menu-diferente{
-                transition: .2s;
-                background-color: rgba(0, 128, 100, 0.8);
-            }
-        }
-
-        @media(orientation: portrait){
-            body{
-                text-align: center;
-                margin-top: 200px;
-                background-color: rgb(23, 150, 6);
-                color: white;
-            }
-            header{
-                position: relative;
-                top: 0;
-                left: 0;
-            }
-            h1{
-                font-family:'Quicksand', sans-serif;
-            }
-            h2{
-                font-family:'Inconsolata', monospace;
-            }
-            h1#t1{
-                font-size:80px;
-                margin-bottom:-10px;
-            }
-            h2#s1{
-                font-size:30px
-            }
-            div#inicio{
-                margin-top:-200px;
-                border-bottom: 100000px;
-                
-                background-image: url("imagens/paisagem.jpg");
-                background-repeat: no-repeat;
-                background-size: 200%;
-                background-position: fixed;
-                padding-bottom:330px;
-                padding-right:-200px;
-                
-                
-            }
-            ul#menu{
-                position: fixed;
-                top:0;
-                background-color: white;
-            }
-            ul#menu li{
-                display: inline-block;
-                margin-right:10px;
-                font-family: Quicksand;
-                color:black;
-                font-size: 18px;
-                padding:5px;
-                padding-left: 0px;
-                width: 100px;
-                height:10px;
-            }
-            nav{
-                text-align:center;
-            }
-            a{
-                color: black;
-                text-decoration: none;
-            }
-            section{
-                margin-top: px;
-            }
-            div#titulo{
-                top: 50%;
-            }
-            h1#t2{
-                font-size: 50px;
-                margin-bottom: -13px;
-                font-family:Recursive;
-            }
-            ul#icones li{
-                display: inline-block;
-                margin: 100px;
-                margin-top: auto;
-            }
-            ul#icones li h3{
-                font-family:Recursive;
-                font-size: 25px;
-            }
-            ul#icones{
-                text-align: center;
-            }
-            div#depoimentos{
-                background-image: url("imagens/praia\ JPG.jpg");
-                background-repeat: no-repeat;
-                background-size: 700%;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            div#planos{
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            div#planos li{
-                display: inline-block;
-                margin: 0px;
-                position: relative;
-            }
-            div#planos li img{
-                width: 350px;
-                opacity: .8;
-                transition: .18s;
-            }
-            div#planos li figure{
-                margin: 20px;
-            
-            }
-            div#planos li img:hover{
-                width: 400px;
-                opacity: 1;
-            }
-            div#planos li figcaption{
-                position: absolute;
-                bottom: 40px;
-                left: 40px;
-                font-family: Recursive;
-                font-size: 40px;
-            }
-            .menu-diferente{
-                transition: .2s;
-                background-color: rgb(255, 255, 255);
-                
-            }
-        }
-    </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 <script type="text/javascript">
 jQuery(function () {
   jQuery(window).scroll(function () {
-    if (jQuery(this).scrollTop() > 400) {
+    if (jQuery(this).scrollTop() > 100) {
      $("#menu").addClass("menu-diferente");
     } else {
      $("#menu").removeClass("menu-diferente");
@@ -291,8 +29,8 @@ jQuery(function () {
     <div id="inicio">
         <nav>
             <ul id="menu">
-                <li><a href="">Início</a></li>
-                <li><a href="">Conheça</a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Conheça</a></li>
                 <li><a href="">Depoimentos</a></li>
                 <li><a href="">Planos</a></li>
                 <li><a href="">Reserve já</a></li>
@@ -313,15 +51,15 @@ jQuery(function () {
     <br><br><br><br>
     <ul id="icones">
         <li>
-            <img src="imagens/jesus PNG.png" alt="">
+            <img src="imagens/icons/jesus PNG.png" alt="">
             <h3>Visite lugares <br>incríveis</h3>
         </li>
         <li>
-            <img src="imagens/aviao PNG.png" alt="">
+            <img src="imagens/icons/aviao PNG.png" alt="">
             <h3>Viage para onde e <br>quando quiser</h3>
         </li>
         <li>
-            <img src="imagens/dinheiro PNG.png" alt="">
+            <img src="imagens/icons/dinheiro PNG.png" alt="">
             <h3>E o melhor: <br>com um baixo custo</h3>
         </li>
     </ul>
@@ -331,20 +69,17 @@ jQuery(function () {
     <!-- DEPOIMENTOS -->
     <div id="depoimentos">
         <h1 id="t2">Depoimentos:</h1>
-        <h2>A agência de viagens com mais de 20 anos de experiência.</h2>
+        <h2>Veja o que os nossos clientes dizem sobre nós:</h2>
         <br><br><br><br>
         <ul id="icones">
             <li>
-                <img src="imagens/jesus PNG.png" alt="">
-                <h3>Visite lugares <br>incríveis</h3>
+                <cite>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, illo veniam voluptatem voluptas cupiditate assumenda earum nobis consectetur dolorem quaerat laudantium ipsum accusantium. Porro animi reiciendis a numquam, quas impedit! Lorem"</cite>
             </li>
             <li>
-                <img src="imagens/aviao PNG.png" alt="">
-                <h3>Viage para onde e <br>quando quiser</h3>
+                <cite>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, illo veniam voluptatem voluptas cupiditate assumenda earum nobis consectetur dolorem quaerat laudantium ipsum accusantium. Porro animi reiciendis a numquam, quas impedit! Lorem"</cite>
             </li>
             <li>
-                <img src="imagens/dinheiro PNG.png" alt="">
-                <h3>E o melhor: <br>com um baixo custo</h3>
+                <cite>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, illo veniam voluptatem voluptas cupiditate assumenda earum nobis consectetur dolorem quaerat laudantium ipsum accusantium. Porro animi reiciendis a numquam, quas impedit!"</cite>
             </li>
         </ul>
     </div>
@@ -407,22 +142,13 @@ jQuery(function () {
     <hr>
     </div>
     <h1 id="t2">Reserve já:</h1>
-    <h2>A agência de viagens com mais de 20 anos de experiência.</h2>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos iure beatae aut ad impedit, eaque, vitae natus alias ut dolor vel consequuntur cumque ea ducimus voluptatum eligendi aliquid quos!
+    Illum eligendi doloribus nisi vel veniam error eius? Aliquid perferendis sed maxime soluta laborum ipsum dignissimos libero fugiat qui alias doloremque cumque, sit iure ipsa amet? Numquam illum consequatur porro.
+    Nemo illum optio doloremque delectus iure voluptatibus minus, rem sint soluta sed possimus, neque placeat sunt, aut perferendis consequatur quasi. Sequi corporis non nihil quasi hic voluptatum voluptates fuga officia?
+    Ad laboriosam ipsa itaque, totam illum provident eligendi enim! Quae maxime voluptatibus quibusdam ipsam iure temporibus mollitia numquam iste, minus ipsum, perferendis molestias sapiente ea ullam nulla, enim officia provident.
+    Omnis aliquam nihil voluptates. Provident laboriosam expedita voluptates natus quam nisi debitis explicabo, rerum aut at tenetur modi commodi exercitationem repellat ipsa, delectus, dignissimos itaque odio fugiat culpa quidem aperiam!</h2>
     <br><br><br><br>
-    <ul id="icones">
-        <li>
-            <img src="imagens/jesus PNG.png" alt="">
-            <h3>Visite lugares <br>incríveis</h3>
-        </li>
-        <li>
-            <img src="imagens/aviao PNG.png" alt="">
-            <h3>Viage para onde e <br>quando quiser</h3>
-        </li>
-        <li>
-            <img src="imagens/dinheiro PNG.png" alt="">
-            <h3>E o melhor: <br>com um baixo custo</h3>
-        </li>
-    </ul>
+    
 
 </script>
 </body>
